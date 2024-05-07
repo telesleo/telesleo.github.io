@@ -1,0 +1,10 @@
+#app {
+  margin: 0 150px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  #app {
+    margin: 0 25px;
+  }
+}
