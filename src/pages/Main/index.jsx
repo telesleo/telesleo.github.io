@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './main.module.css';
 import ProjectCard from '../ProjectCard';
 
-const projects = await (await fetch('projects.json')).json();
-
 export default function Main() {
+  const [projects, setProjects] = useState([]);
+
+  const getProjects = async () => {
+    const response = await fetch('/projects.json');
+    const json = await response.json();
+    setProjects(Object.values(json));
+  };
+
+  useEffect(() => {
+    getProjects();
+  }, []);
+
   return (
     <div id={styles.main}>
       <section id={styles.about}>
@@ -41,7 +51,7 @@ export default function Main() {
         <h1>Projects</h1>
         <div>
           {
-            (projects) && projects.map((project) => (
+            projects.map((project) => (
               <ProjectCard
                 key={project.title}
                 title={project.title}
