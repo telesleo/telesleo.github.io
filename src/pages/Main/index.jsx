@@ -3,13 +3,13 @@ import styles from './main.module.css';
 
 export default function Main() {
   return (
-    <div>
+    <div id={styles.main}>
       <section id={styles.about}>
         <div id={styles['about-picture-name']}>
           <img id={styles['profile-picture']} src="images/profile-picture.png" alt="Leo Teles" />
           <div id={styles['name-role']}>
             <h1>Leo Teles</h1>
-            <p>Desenvolvedor Web Full Stack</p>
+            <p>Desenvolvedor Web - Full Stack</p>
           </div>
         </div>
         <div id={styles['about-description']}>
@@ -23,6 +23,18 @@ export default function Main() {
           Atualmente estudando Cybersecurity e aprofundando o conhecimento em Python.`}
           </p>
         </div>
+      </section>
+      <section>
+        <h1>Habilidades</h1>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Express</li>
+        </ul>
       </section>
     </div>
   );
