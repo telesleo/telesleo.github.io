@@ -60,9 +60,20 @@ export default function Project() {
               </ul>
             </section>
             <section>
+              {
+                (project.webpage)
+                && (
+                  <>
+                    <h1>Teste o site:</h1>
+                    <a href={project.webpage} target="_blank" rel="noreferrer">{project.webpage}</a>
+                  </>
+                )
+              }
+            </section>
+            <section>
               <h1>Projeto no github:</h1>
               {
-                (project['github-urls'].map((url) => <a key={url} href={url}>{url}</a>))
+                (project['github-urls'].map((url) => <a key={url} href={url} target="_blank" rel="noreferrer">{url}</a>))
               }
             </section>
           </>
