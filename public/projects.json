@@ -1,7 +1,26 @@
-[
-  {
+{
+  "blog-app": {
     "title": "Rede social de postagens",
-    "description": "Um lugar onde você posta ou acompanha postagens de outros usuários sobre diversos assuntos.", 
-    "cover-image": "blog-platform.png"
+    "description": "Um lugar onde você posta e acompanha postagens de outros usuários sobre diversos assuntos.", 
+    "cover-image": "blog-app/main-page.png",
+    "content": [
+      { "type": "text", "content": "Blog App é uma plataforma para conectar escritores. Um lugar onde você consegue compartilhar suas ideias e enteragir com a comunidade. O aplicativo oferece um ambiente colaborativo em que usuários podem se expressar e participar de diferentes discussões." },
+      { "type": "text", "content": "Na página principal você encontra os últimos posts enviados pela comunidade." },
+      { "type": "image", "content": "blog-app/main-page.png" },
+      { "type": "text", "content": "Crie uma nova conta ou entre com uma conta já existente para ter acesso a funcionalidades extras." },
+      { "type": "image", "content": "blog-app/login-page.png" },
+      { "type": "image", "content": "blog-app/register-page.png" },
+      { "type": "text", "content": "Você também pode criar suas próprias postagens." },
+      { "type": "image", "content": "blog-app/create-post-page.png" },
+      { "type": "image", "content": "blog-app/post-page.png" },
+      { "type": "text", "content": "Todas as páginas são construidas para funcionar em diferentes tamanhos de tela, de celulares a computadores." },
+      { "type": "image", "content": "blog-app/profile-page.png" },
+      { "type": "image", "content": "blog-app/profile-desktop.png" }
+    ],
+    "technologies-used": ["Javascript", "HTML", "CSS", "React"],
+    "github-urls": [
+      "https://github.com/telesleo/blog-frontend",
+      "https://github.com/telesleo/blog-backend"
+    ]
   }
-]
+}
