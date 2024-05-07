@@ -1,5 +1,8 @@
 import React from 'react';
 import styles from './main.module.css';
+import ProjectCard from '../ProjectCard';
+
+const projects = await (await fetch('projects.json')).json();
 
 export default function Main() {
   return (
@@ -18,9 +21,7 @@ export default function Main() {
           sou fascinado por tecnologia e programação, 
           área que venho estudando há 4 anos. Hoje sou formado em Desenvolvimento Web pela Trybe. 
           Tenho conhecimentos tanto de Backend quando de Frontend, usando tecnologias como Javascript, 
-          Typescript, React, Node, Express, Docker entre outras. 
-          Na busca constante de melhorar minhas técnicas e aprender novas habilidades. 
-          Atualmente estudando Cybersecurity e aprofundando o conhecimento em Python.`}
+          Typescript, React, Node, Express, Docker entre outras.`}
           </p>
         </div>
       </section>
@@ -35,6 +36,21 @@ export default function Main() {
           <li>Node.js</li>
           <li>Express</li>
         </ul>
+      </section>
+      <section>
+        <h1>Projects</h1>
+        <div>
+          {
+            (projects) && projects.map((project) => (
+              <ProjectCard
+                key={project.title}
+                title={project.title}
+                description={project.description}
+                image={project['cover-image']}
+              />
+            ))
+          }
+        </div>
       </section>
     </div>
   );

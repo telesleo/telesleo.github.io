@@ -45,3 +45,9 @@
   height: 120px;
   border-radius: 60px;
 }
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
