@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import styles from './main.module.css';
+import { Link } from 'react-router-dom';
 import ProjectCard from '../ProjectCard';
+import styles from './main.module.css';
 
 export default function Main() {
   const [projects, setProjects] = useState([]);
@@ -8,7 +9,9 @@ export default function Main() {
   const getProjects = async () => {
     const response = await fetch('/projects.json');
     const json = await response.json();
-    setProjects(Object.values(json));
+    console.log(Object.entries(json));
+    setProjects(Object.entries(json)
+      .map(([projectKey, projectValue]) => ({ id: projectKey, ...projectValue })));
   };
 
   useEffect(() => {
@@ -52,12 +55,13 @@ export default function Main() {
         <div>
           {
             projects.map((project) => (
-              <ProjectCard
-                key={project.title}
-                title={project.title}
-                description={project.description}
-                image={project['cover-image']}
-              />
+              <Link key={project.title} to={`/project/${project.id}`}>
+                <ProjectCard
+                  title={project.title}
+                  description={project.description}
+                  image={project['cover-image']}
+                />
+              </Link>
             ))
           }
         </div>

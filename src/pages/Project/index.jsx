@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import styles from './project.module.css';
 
 export default function Project() {
   const { projectId } = useParams();
@@ -24,15 +25,23 @@ export default function Project() {
             <section>
               <h1>{project.title}</h1>
             </section>
-            <section>
+            <section id={styles.content}>
               {
                 project.content.map((contentPiece) => {
                   if (contentPiece.type === 'text') {
-                    return <p key={contentPiece.content}>{contentPiece.content}</p>;
+                    return (
+                      <p
+                        key={contentPiece.content}
+                        className={styles.text}
+                      >
+                        {contentPiece.content}
+                      </p>
+                    );
                   } if (contentPiece.type === 'image') {
                     return (
                       <img
                         key={contentPiece.content}
+                        className={styles.image}
                         src={`/images/${contentPiece.content}`}
                         alt={project.description}
                       />

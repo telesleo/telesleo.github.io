@@ -1,0 +1,17 @@
+#content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.text {
+  flex-basis: 100%;
+}
