@@ -7,7 +7,10 @@ export default function Main() {
       <section id={styles.about}>
         <div id={styles['about-picture-name']}>
           <img id={styles['profile-picture']} src="images/profile-picture.png" alt="Leo Teles" />
-          <h1>Leo Teles</h1>
+          <div id={styles['name-role']}>
+            <h1>Leo Teles</h1>
+            <p>Desenvolvedor Web Full Stack</p>
+          </div>
         </div>
         <div id={styles['about-description']}>
           <p>

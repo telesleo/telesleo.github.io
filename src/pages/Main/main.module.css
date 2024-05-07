@@ -17,7 +17,13 @@
   gap: 20px;
 }
 
-#about-picture-name h1 {
+#name-role {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name-role h1, #name-role p {
   margin: 0;
 }
 
