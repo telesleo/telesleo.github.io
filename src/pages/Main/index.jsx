@@ -48,7 +48,7 @@ export default function Main() {
         </ul>
       </section>
       <section>
-        <h1>Projects</h1>
+        <h1>Projetos</h1>
         <div>
           {
             projects.map((project) => (
