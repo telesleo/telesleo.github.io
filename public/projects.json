@@ -17,7 +17,7 @@
       { "type": "image", "content": "blog-app/profile-page.png" },
       { "type": "image", "content": "blog-app/profile-desktop.png" }
     ],
-    "technologies-used": ["Javascript", "HTML", "CSS", "React"],
+    "technologies-used": ["Javascript", "HTML", "CSS", "React", "TypeScript", "Node.js", "Express", "Sequelize"],
     "github-urls": [
       "https://github.com/telesleo/blog-frontend",
       "https://github.com/telesleo/blog-backend"
@@ -41,6 +41,24 @@
     "webpage": "https://telesleo.github.io/bilingual-reader",
     "github-urls": [
       "https://github.com/telesleo/bilingual-reader"
+    ]
+  },
+  "trybe-tunes": {
+    "title": "Player de música",
+    "description": "Site para ouvir trechos de músicas.", 
+    "cover-image": "trybe-tunes/search-results.png",
+    "content": [
+      { "type": "text", "content": "Trybe tunes é um aplicativo web onde você pode ouvir trechos de músicas, pesquisando por artistas e conferindo álbuns." },
+      { "type": "image", "content": "trybe-tunes/search-results.png" },
+      { "type": "text", "content": "Contém um player de música construido especialmente para o aplicativo." },
+      { "type": "image", "content": "trybe-tunes/player.gif" },
+      { "type": "text", "content": "Página de perfil podendo editar as informações." },
+      { "type": "image", "content": "trybe-tunes/profile.png" },
+      { "type": "image", "content": "trybe-tunes/tablet.png" }
+    ],
+    "technologies-used": ["Javascript", "HTML", "CSS", "React"],
+    "github-urls": [
+      "https://github.com/telesleo/project-trybetunes"
     ]
   }
 }
