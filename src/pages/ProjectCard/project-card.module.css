@@ -1,9 +1,17 @@
+.project-link {
+  text-decoration: none;
+  color: black;
+}
+
 .card {
-  width: 500px;
-  height: 500px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid var(--dark-gray);
+  border-radius: 5px;
+  padding: 25px;
+  box-shadow: 3px 3px 0 var(--dark-gray);
 }
 
 .image {
@@ -11,4 +19,9 @@
   height: 300px;
   background-position: center;
   background-size: cover;
+  border-radius: 3px;
+}
+
+.description {
+  color: var(--dark-gray);
 }
