@@ -24,7 +24,7 @@
     ]
   },
   "bilingual-reader": {
-    "title": "Leitor de Texto Bilingue",
+    "title": "Leitor de texto bilíngue",
     "description": "Website que permite traduzir um texto, podendo ler a versão original e a traduzida lado a lado.", 
     "cover-image": "bilingual-reader/main-page.png",
     "content": [
