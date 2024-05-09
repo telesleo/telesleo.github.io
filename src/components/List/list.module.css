@@ -1,9 +1,3 @@
-.list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .list ul {
   display: flex;
   flex-direction: row;

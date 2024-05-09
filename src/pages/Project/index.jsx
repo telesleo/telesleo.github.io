@@ -52,30 +52,41 @@ export default function Project() {
                 })
               }
             </section>
+            <hr />
             <section>
+              <h2>Tecnologias usadas:</h2>
               <List
-                title="Tecnologias usadas:"
                 elements={
                 project['technologies-used']
               }
               />
             </section>
-            <section>
-              {
-                (project.webpage)
-                && (
-                  <>
-                    <h1>Teste o site:</h1>
-                    <a href={project.webpage} target="_blank" rel="noreferrer">{project.webpage}</a>
-                  </>
-                )
-              }
-            </section>
-            <section>
-              <h1>Projeto no github:</h1>
-              {
-                (project['github-urls'].map((url) => <a key={url} href={url} target="_blank" rel="noreferrer">{url}</a>))
-              }
+            <hr />
+            <section id={styles['webpage-github']}>
+              <div>
+                {
+                  (project.webpage)
+                  && (
+                    <>
+                      <h2>Teste o site:</h2>
+                      <a href={project.webpage} target="_blank" rel="noreferrer">{project.webpage}</a>
+                    </>
+                  )
+                }
+              </div>
+              <div id={styles.github}>
+                <h2>Projeto no github:</h2>
+                <div id={styles['github-links']}>
+                  {
+                    (project['github-urls'].map((url) => (
+                      <a className={styles['github-link']} key={url} href={url} target="_blank" rel="noreferrer">
+                        <img className={styles.icon} src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="github icon" />
+                        <p>{url}</p>
+                      </a>
+                    )))
+                  }
+                </div>
+              </div>
             </section>
           </>
         )

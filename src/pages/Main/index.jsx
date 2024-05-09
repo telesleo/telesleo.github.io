@@ -38,8 +38,8 @@ export default function Main() {
         </div>
       </section>
       <section>
+        <h1>Habilidades</h1>
         <List
-          title="Habilidades"
           elements={[
             'HTML',
             'CSS',
