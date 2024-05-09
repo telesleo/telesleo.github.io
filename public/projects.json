@@ -17,7 +17,7 @@
       { "type": "image", "content": "blog-app/profile-page.png" },
       { "type": "image", "content": "blog-app/profile-desktop.png" }
     ],
-    "technologies-used": ["Javascript", "HTML", "CSS", "React", "TypeScript", "Node.js", "Express", "Sequelize"],
+    "technologies-used": ["Javascript", "HTML", "CSS", "React", "TypeScript", "Node.js", "Express", "MySQL", "Sequelize"],
     "github-urls": [
       "https://github.com/telesleo/blog-frontend",
       "https://github.com/telesleo/blog-backend"

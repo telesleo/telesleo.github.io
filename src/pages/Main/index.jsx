@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import List from '../../components/List';
 import ProjectCard from '../ProjectCard';
 import styles from './main.module.css';
 
@@ -37,17 +38,22 @@ export default function Main() {
         </div>
       </section>
       <section>
-        <h1>Habilidades</h1>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Node.js</li>
-          <li>Express</li>
-        </ul>
+        <List
+          title="Habilidades"
+          elements={[
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'TypeScript',
+            'React',
+            'Node.js',
+            'Express',
+            'MySQL',
+            'Sequelize',
+          ]}
+        />
       </section>
+      <hr />
       <section>
         <h1>Projetos</h1>
         <div id={styles['project-list']}>

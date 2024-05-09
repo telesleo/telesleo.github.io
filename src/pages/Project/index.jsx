@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import List from '../../components/List';
 import styles from './project.module.css';
 
 export default function Project() {
@@ -52,12 +53,12 @@ export default function Project() {
               }
             </section>
             <section>
-              <h1>Tecnologias usadas:</h1>
-              <ul>
-                {
-                  (project['technologies-used'].map((technology) => <li key={technology}>{technology}</li>))
-                }
-              </ul>
+              <List
+                title="Tecnologias usadas:"
+                elements={
+                project['technologies-used']
+              }
+              />
             </section>
             <section>
               {
