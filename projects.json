@@ -1,0 +1,65 @@
+{
+  "blog-app": {
+    "title": "Rede social de postagens",
+    "description": "Um lugar onde você posta e acompanha postagens de outros usuários sobre diversos assuntos.", 
+    "cover-image": "blog-app/main-page.png",
+    "content": [
+      { "type": "text", "content": "Blog App é uma plataforma para conectar escritores. Um lugar onde você consegue compartilhar suas ideias e enteragir com a comunidade. O aplicativo oferece um ambiente colaborativo em que usuários podem se expressar e participar de diferentes discussões." },
+      { "type": "text", "content": "Na página principal você encontra os últimos posts enviados pela comunidade." },
+      { "type": "image", "content": "blog-app/main-page.png" },
+      { "type": "text", "content": "Crie uma nova conta ou entre com uma conta já existente para ter acesso a funcionalidades extras." },
+      { "type": "image", "content": "blog-app/login-page.png" },
+      { "type": "image", "content": "blog-app/register-page.png" },
+      { "type": "text", "content": "Você também pode criar suas próprias postagens." },
+      { "type": "image", "content": "blog-app/create-post-page.png" },
+      { "type": "image", "content": "blog-app/post-page.png" },
+      { "type": "text", "content": "Todas as páginas são construidas para funcionar em diferentes tamanhos de tela, de celulares a computadores." },
+      { "type": "image", "content": "blog-app/profile-page.png" },
+      { "type": "image", "content": "blog-app/profile-desktop.png" }
+    ],
+    "technologies-used": ["Javascript", "HTML", "CSS", "React", "TypeScript", "Node.js", "Express", "MySQL", "Sequelize"],
+    "github-urls": [
+      "https://github.com/telesleo/blog-frontend",
+      "https://github.com/telesleo/blog-backend"
+    ]
+  },
+  "bilingual-reader": {
+    "title": "Leitor de texto bilíngue",
+    "description": "Website que permite traduzir um texto, podendo ler a versão original e a traduzida lado a lado.", 
+    "cover-image": "bilingual-reader/main-page.png",
+    "content": [
+      { "type": "text", "content": "Leitor bilíngue é um aplicativo online criado para ajudar usuários a estudar textos em uma língua estrangeira, usando tradução." },
+      { "type": "image", "content": "bilingual-reader/main-page.png" },
+      { "type": "text", "content": "O programa oferece uma interface com o texto original e o traduzido, lado a lado. Além disso, contém um sistema TTS (Texto para Fala) que permite com que você ouça o texto narrado. Você também pode clicar em frases separadas para ouvir o áudio apenas de partes específicas." },
+      { "type": "text", "content": "Compatível tando com computador quanto celular." },
+      { "type": "image", "content": "bilingual-reader/mobile-page.png" },
+      { "type": "text", "content": "É possível alterar entre diferentes textos. Todos os textos são salvos localmente no navegador. Você pode removê-los pressionando o botão com o ícone de lixeira." },
+      { "type": "text", "content": "Dois modos, diurno e noturno, as cores são alteradas para facilitar a leitura em diferentes momentos do dia." },
+      { "type": "image", "content": "bilingual-reader/light-mode.png" },
+      { "type": "image", "content": "bilingual-reader/night-mode.png" }
+    ],
+    "technologies-used": ["Javascript", "HTML", "CSS", "React"],
+    "webpage": "https://telesleo.github.io/bilingual-reader",
+    "github-urls": [
+      "https://github.com/telesleo/bilingual-reader"
+    ]
+  },
+  "trybe-tunes": {
+    "title": "Player de música",
+    "description": "Site para ouvir trechos de músicas.", 
+    "cover-image": "trybe-tunes/search-results.png",
+    "content": [
+      { "type": "text", "content": "Trybe tunes é um aplicativo web onde você pode ouvir trechos de músicas, pesquisando por artistas e conferindo álbuns." },
+      { "type": "image", "content": "trybe-tunes/search-results.png" },
+      { "type": "text", "content": "Contém um player de música construido especialmente para o aplicativo." },
+      { "type": "image", "content": "trybe-tunes/player.gif" },
+      { "type": "text", "content": "Página de perfil podendo editar as informações." },
+      { "type": "image", "content": "trybe-tunes/profile.png" },
+      { "type": "image", "content": "trybe-tunes/tablet.png" }
+    ],
+    "technologies-used": ["Javascript", "HTML", "CSS", "React"],
+    "github-urls": [
+      "https://github.com/telesleo/project-trybetunes"
+    ]
+  }
+}
