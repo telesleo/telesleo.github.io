@@ -2,23 +2,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 #about {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 30px;
   align-items: center;
   justify-content: center;
   gap: 50px;
+  background-image: url('/public/images/background-main.png');
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--white);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 #about-picture-name {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: stretch;
   gap: 20px;
 }
 
@@ -28,7 +34,7 @@
   align-items: center;
 }
 
-#name-role h1, #name-role p {
+#name-role h2, #name-role p {
   margin: 0;
 }
 
@@ -41,13 +47,27 @@
 }
 
 #profile-picture {
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
+  width: 200px;
+  height: 200px;
+  border-radius: 128px;
 }
 
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 30px;
+}
+
+#project-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 30px;
+}
+
+#project-list a {
+  display: block;
 }

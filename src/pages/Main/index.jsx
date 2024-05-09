@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import ProjectCard from '../ProjectCard';
 import styles from './main.module.css';
 
@@ -9,7 +8,6 @@ export default function Main() {
   const getProjects = async () => {
     const response = await fetch('/projects.json');
     const json = await response.json();
-    console.log(Object.entries(json));
     setProjects(Object.entries(json)
       .map(([projectKey, projectValue]) => ({ id: projectKey, ...projectValue })));
   };
@@ -24,7 +22,7 @@ export default function Main() {
         <div id={styles['about-picture-name']}>
           <img id={styles['profile-picture']} src="images/profile-picture.png" alt="Leo Teles" />
           <div id={styles['name-role']}>
-            <h1>Leo Teles</h1>
+            <h2>Leo Teles</h2>
             <p>Desenvolvedor Web - Full Stack</p>
           </div>
         </div>
@@ -52,16 +50,16 @@ export default function Main() {
       </section>
       <section>
         <h1>Projetos</h1>
-        <div>
+        <div id={styles['project-list']}>
           {
             projects.map((project) => (
-              <Link key={project.title} to={`/project/${project.id}`}>
-                <ProjectCard
-                  title={project.title}
-                  description={project.description}
-                  image={project['cover-image']}
-                />
-              </Link>
+              <ProjectCard
+                key={project.title}
+                projectId={project.id}
+                title={project.title}
+                description={project.description}
+                image={project['cover-image']}
+              />
             ))
           }
         </div>
