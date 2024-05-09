@@ -30,11 +30,12 @@
     "content": [
       { "type": "text", "content": "Leitor bilíngue é um aplicativo online criado para ajudar usuários a estudar textos em uma língua estrangeira, usando tradução." },
       { "type": "image", "content": "bilingual-reader/main-page.png" },
-      { "type": "text", "content": "O programa oferece uma interface com o texto original e o traduzido, lado a lado. Além disso, o aplicativo contém um sistema TTS (Texto para Fala) que permite com que você ouça o texto narrado. Você também pode clicar em frases separadas para ouvir o áudio apenas de partes específicas." },
+      { "type": "text", "content": "O programa oferece uma interface com o texto original e o traduzido, lado a lado. Além disso, contém um sistema TTS (Texto para Fala) que permite com que você ouça o texto narrado. Você também pode clicar em frases separadas para ouvir o áudio apenas de partes específicas." },
       { "type": "text", "content": "Compatível tando com computador quanto celular." },
       { "type": "image", "content": "bilingual-reader/mobile-page.png" },
       { "type": "text", "content": "É possível alterar entre diferentes textos. Todos os textos são salvos localmente no navegador. Você pode removê-los pressionando o botão com o ícone de lixeira." },
       { "type": "text", "content": "Dois modos, diurno e noturno, as cores são alteradas para facilitar a leitura em diferentes momentos do dia." },
+      { "type": "image", "content": "bilingual-reader/light-mode.png" },
       { "type": "image", "content": "bilingual-reader/night-mode.png" }
     ],
     "technologies-used": ["Javascript", "HTML", "CSS", "React"],
