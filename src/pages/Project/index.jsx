@@ -63,7 +63,7 @@ export default function Project() {
             </section>
             <hr />
             <section id={styles['webpage-github']}>
-              <div>
+              <div id={styles.webpage}>
                 {
                   (project.webpage)
                   && (
