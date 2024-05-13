@@ -8,15 +8,15 @@ export default function Project() {
 
   const [project, setProject] = useState();
 
-  const getProject = async () => {
-    const response = await fetch('/projects.json');
-    const projects = await response.json();
-    setProject(projects[projectId]);
-  };
-
   useEffect(() => {
+    const getProject = async () => {
+      const response = await fetch('/projects.json');
+      const projects = await response.json();
+      setProject(projects[projectId]);
+    };
+
     getProject();
-  }, []);
+  }, [projectId]);
 
   return (
     <div>
