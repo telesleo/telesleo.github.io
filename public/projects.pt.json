@@ -25,7 +25,7 @@
   },
   "bilingual-reader": {
     "title": "Leitor de texto bilíngue",
-    "description": "Website que permite traduzir um texto, podendo ler a versão original e a traduzida lado a lado.", 
+    "description": "Um website que permite traduzir um texto, podendo ler a versão original e a traduzida lado a lado.", 
     "cover-image": "bilingual-reader/main-page.png",
     "content": [
       { "type": "text", "content": "Leitor bilíngue é um aplicativo online criado para ajudar usuários a estudar textos em uma língua estrangeira, usando tradução." },

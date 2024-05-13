@@ -7,7 +7,7 @@ export default function ProjectCard({
   projectId, title, description, image,
 }) {
   return (
-    <Link className={styles['project-link']} to={`/project/${projectId}`}>
+    <Link className={styles['project-link']} to={`project/${projectId}`}>
       <div className={styles.card}>
         <h2>{title}</h2>
         <p className={styles.description}>{description}</p>

@@ -1,27 +1,35 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import List from '../../components/List';
+import getLanguage from '../../utils/localization';
 import styles from './project.module.css';
 
 export default function Project() {
-  const { projectId } = useParams();
+  const { language, projectId } = useParams();
 
+  const [pageData, setPageData] = useState();
   const [project, setProject] = useState();
 
   useEffect(() => {
+    const pageLanguage = language || getLanguage(navigator) || 'en';
+    const getPageData = async () => {
+      const response = await fetch(`/project-page.${pageLanguage}.json`);
+      const data = await response.json();
+      setPageData(data);
+    };
     const getProject = async () => {
-      const response = await fetch('/projects.json');
+      const response = await fetch(`/projects.${pageLanguage}.json`);
       const projects = await response.json();
       setProject(projects[projectId]);
     };
-
+    getPageData();
     getProject();
-  }, [projectId]);
+  }, [language, projectId]);
 
   return (
     <div>
       {
-        (project) && (
+        (pageData && project) && (
           <>
             <section>
               <h1>{project.title}</h1>
@@ -54,7 +62,7 @@ export default function Project() {
             </section>
             <hr />
             <section>
-              <h2>Tecnologias usadas:</h2>
+              <h2>{pageData['technologies-title']}</h2>
               <List
                 elements={
                 project['technologies-used']
@@ -68,14 +76,14 @@ export default function Project() {
                   (project.webpage)
                   && (
                     <>
-                      <h2>Teste o site:</h2>
+                      <h2>{pageData['test-website-title']}</h2>
                       <a href={project.webpage} target="_blank" rel="noreferrer">{project.webpage}</a>
                     </>
                   )
                 }
               </div>
               <div id={styles.github}>
-                <h2>Projeto no github:</h2>
+                <h2>{pageData['github-projects-title']}</h2>
                 <div id={styles['github-links']}>
                   {
                     (project['github-urls'].map((url) => (
