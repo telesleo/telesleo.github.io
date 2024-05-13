@@ -4,7 +4,7 @@
     "description": "Um lugar onde você posta e acompanha postagens de outros usuários sobre diversos assuntos.", 
     "cover-image": "blog-app/main-page.png",
     "content": [
-      { "type": "text", "content": "Blog App é uma plataforma para conectar escritores. Um lugar onde você consegue compartilhar suas ideias e enteragir com a comunidade. O aplicativo oferece um ambiente colaborativo em que usuários podem se expressar e participar de diferentes discussões." },
+      { "type": "text", "content": "Blog App é uma plataforma para conectar escritores. Um lugar onde você consegue compartilhar suas ideias e interagir com a comunidade. O aplicativo oferece um ambiente colaborativo em que usuários podem se expressar e participar de diferentes discussões." },
       { "type": "text", "content": "Na página principal você encontra os últimos posts enviados pela comunidade." },
       { "type": "image", "content": "blog-app/main-page.png" },
       { "type": "text", "content": "Crie uma nova conta ou entre com uma conta já existente para ter acesso a funcionalidades extras." },
