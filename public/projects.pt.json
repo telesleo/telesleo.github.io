@@ -1,4 +1,25 @@
 {
+  "clipmap": {
+    "title": "ClipMap - Ferramenta de Mapas Mentais",
+    "description": "ClipMap é um aplicativo web e ferramenta para criar e salvar mapas mentais na nuvem.",
+    "cover-image": "clipmap/node.png",
+    "content": [
+      { "type": "text", "content": "ClipMap é uma ferramenta para criar e salvar mapas mentais na nuvem." },
+      { "type": "image", "content": "clipmap/map.png" },
+      { "type": "text", "content": "ClipMap se destaca de outras ferramentas online por não limitar a quantidade de mapas a serem criados de graça. Usuários podem começar a criar seus mapas de maneira fácil sem precisar criar uma conta." },
+      { "type": "image", "content": "clipmap/maps.png" },
+      { "type": "image", "content": "clipmap/saved-map.png" },
+      { "type": "text", "content": "A ferramenta oferece uma interface de usuário simples construída para facilitar o uso. Ao invés de sobrecarregar o usuário com inúmeros botões ao mesmo tempo, as opções são mostradas contextualmente quando necessárias, assegurando que o usuário possa focar na tarefa sem distrações." },
+      { "type": "image", "content": "clipmap/node.png" }
+    ],
+    "technologies-used": ["Javascript", "Typescript", "HTML", "CSS", "React.js", "Node.js", "Express", "Sequelize", "PostgreSQL", "Docker", "Google OAuth"],
+    "github-urls": [
+      "https://github.com/telesleo/clipmap-demo"
+    ],
+    "webpage": [
+      "https://clipmap.net"
+    ]
+  },
   "blog-app": {
     "title": "Rede social de postagens",
     "description": "Um lugar onde você posta e acompanha postagens de outros usuários sobre diversos assuntos.", 

@@ -1,4 +1,25 @@
 {
+  "clipmap": {
+    "title": "ClipMap - Mind Map Tool",
+    "description": "ClipMap is a web application and tool to create and save mind maps in the cloud.",
+    "cover-image": "clipmap/node.png",
+    "content": [
+      { "type": "text", "content": "ClipMap is a tool for creating and saving mind maps in the cloud." },
+      { "type": "image", "content": "clipmap/map.png" },
+      { "type": "text", "content": "It stands out from other online mind map tools by not limiting the number of maps that can be created for free. Users can easily start creating a new map without having to log in." },
+      { "type": "image", "content": "clipmap/maps.png" },
+      { "type": "image", "content": "clipmap/saved-map.png" },
+      { "type": "text", "content": "The tool offers a clean and simple user interface designed for ease of use. Instead of overwhelming users with numerous buttons all at once, it presents options contextually as needed. This approach ensures that users can focus on the task without distraction." },
+      { "type": "image", "content": "clipmap/node.png" }
+    ],
+    "technologies-used": ["Javascript", "Typescript", "HTML", "CSS", "React.js", "Node.js", "Express", "Sequelize", "PostgreSQL", "Docker", "Google OAuth"],
+    "github-urls": [
+      "https://github.com/telesleo/clipmap-demo"
+    ],
+    "webpage": [
+      "https://clipmap.net"
+    ]
+  },
   "blog-app": {
     "title": "Social network of Blog Posts",
     "description": "A place where you share your posts and follow posts from other users about various topics.", 
