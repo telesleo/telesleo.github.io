@@ -60,6 +60,9 @@ export default function Main() {
                   'Express',
                   'MySQL',
                   'Sequelize',
+                  'C#',
+                  'Git',
+                  'Docker',
                 ]}
               />
             </section>
