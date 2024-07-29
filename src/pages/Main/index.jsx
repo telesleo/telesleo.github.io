@@ -12,7 +12,11 @@ export default function Main() {
   const [pageData, setPageData] = useState();
 
   useEffect(() => {
-    const pageLanguage = language || getLanguage(navigator) || 'en';
+    let pageLanguage = language || getLanguage(navigator) || 'en';
+    if (pageLanguage !== 'en' && pageLanguage !== 'pt') {
+      pageLanguage = 'en';
+    }
+    console.log(pageLanguage);
     const getPageData = async () => {
       const response = await fetch(`/main.${pageLanguage}.json`);
       const data = await response.json();
