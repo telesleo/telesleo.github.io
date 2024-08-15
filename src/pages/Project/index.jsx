@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import List from '../../components/List';
-import getLanguage from '../../utils/localization';
 import styles from './project.module.css';
 
-export default function Project() {
-  const { language, projectId } = useParams();
+export default function Project({ pageLanguage }) {
+  const { projectId } = useParams();
 
   const [pageData, setPageData] = useState();
   const [project, setProject] = useState();
 
   useEffect(() => {
-    const pageLanguage = language || getLanguage(navigator) || 'en';
     const getPageData = async () => {
       const response = await fetch(`/project-page.${pageLanguage}.json`);
       const data = await response.json();
@@ -24,7 +23,7 @@ export default function Project() {
     };
     getPageData();
     getProject();
-  }, [language, projectId]);
+  }, [pageLanguage, projectId]);
 
   return (
     <div>
@@ -102,3 +101,7 @@ export default function Project() {
     </div>
   );
 }
+
+Project.propTypes = {
+  pageLanguage: PropTypes.string.isRequired,
+};
