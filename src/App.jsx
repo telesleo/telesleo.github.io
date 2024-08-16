@@ -12,6 +12,7 @@ function App() {
 
   useEffect(() => {
     let newPageLanguage = language || getLanguage(navigator) || 'en';
+    console.log(language);
     if (newPageLanguage !== 'en' && newPageLanguage !== 'pt') {
       newPageLanguage = 'en';
     }
